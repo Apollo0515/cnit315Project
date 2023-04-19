@@ -6,7 +6,7 @@ from lyrics_extractor import SongLyrics
 
 def get_lyrics():
 
-    extract_lyrics = SongLyrics("AIzaSyAioc_cAMamMxqE_E6VgXj_z4RITnfD4ZM", "b571a4104c6254ba5")
+    extract_lyrics = SongLyrics("KEY", "KEY")
 
     temp = extract_lyrics.get_lyrics(str(sys.argv[1]))
     res = temp['lyrics']
