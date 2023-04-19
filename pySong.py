@@ -16,7 +16,7 @@ def YoutubeLookup():
     querystring = {"query": name, "lang": "en", "country": "us"}
 
     headers = {
-        "X-RapidAPI-Key": "f0e0bb49b8msh380d03d27aa5fc7p19f33ajsna47ae205484d",
+        "X-RapidAPI-Key": "KEY",
         "X-RapidAPI-Host": "youtube-v2.p.rapidapi.com"
     }
 
@@ -46,8 +46,8 @@ def YoutubeConvert():
     url = "https://t-one-youtube-converter.p.rapidapi.com/api/v1/createProcess"
     querystring = {"url": youtubeURL, "format": "mp3", "responseFormat": "json", "stop": "30", "lang": "en"}
     headers = {
-        #If API usage has been exceeded, change the key below to a0eb1f637bmsh09fa09d5335ca55p1fe5bajsn898b6666b127
-        "X-RapidAPI-Key": "f0e0bb49b8msh380d03d27aa5fc7p19f33ajsna47ae205484d",
+        #If API usage has been exceeded, change the key below to KEY
+        "X-RapidAPI-Key": "KEY",
         "X-RapidAPI-Host": "t-one-youtube-converter.p.rapidapi.com"
     }
     response = requests.request("GET", url, headers=headers, params=querystring)
@@ -93,8 +93,8 @@ def YoutubeStatus(guid):
     querystring = {"guid": guid, "responseFormat": "json", "lang": "it"}
 
     headers = {
-        #If API usage has been exceeded, change the key below to a0eb1f637bmsh09fa09d5335ca55p1fe5bajsn898b6666b127
-        "X-RapidAPI-Key": "f0e0bb49b8msh380d03d27aa5fc7p19f33ajsna47ae205484d",
+        #If API usage has been exceeded, change the key below to KEY
+        "X-RapidAPI-Key": "KEY",
         "X-RapidAPI-Host": "t-one-youtube-converter.p.rapidapi.com"
     }
 
